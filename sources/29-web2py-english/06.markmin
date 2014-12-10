@@ -289,7 +289,7 @@ The following database backends support reserved words checking.
 #### Database quoting and case settings (entity_quoting, ignore_field)
 
 You can also use explicit quoting of SQL entities at DAL level.  It works transparently so you can use the same names in python and in the DB schema.
-Since the default behaviour about case sensitivity is to ingore it, you also have to turn the appropriate flag, when instantiating the DAL.
+Since the default behaviour about case sensitivity is to ignore it, you have to turn the appropriate flag, when instantiating the DAL, so that case in field names is properly managed.
 
 ``ignore_field_case = False``
 ``entity_quoting = True``
